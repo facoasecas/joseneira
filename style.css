@@ -26,7 +26,7 @@ a {
 }
 a:hover {
     color: #000;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 :hover {
@@ -40,12 +40,8 @@ h1 {
 
 h1 a {
     color: #333;
-    text-decoration: none;
 }
 
-h1 a:hover {
-    text-decoration: none;
-}
 
 h2 {
     font-weight: 700;
@@ -55,21 +51,16 @@ h2 {
 }
 
 h3 {
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: calc(1rem + 0.25vw);
     color: var(--plata);
 }
+
 
 p.lead {
     font-size: calc(1rem + 0.5vw);
     margin: 0;
     padding: 0;
-}
-
-@media (max-width: 576px) {
-    h3 a:before {
-        content: "↑ ";
-    }
 }
 
 .nav {
@@ -131,60 +122,19 @@ figure figcaption.blockquote-footer abbr {
     color: #222;
 }
 
-article {
-    padding: 1.5rem 0;
-    min-height: auto;
-}
-
-@media (min-width: 992px) {
-    article {
-        padding: 1rem 0;
-        min-height: calc(50vh - 2rem);
-    }
-}
 
 abbr {
     border-bottom: none !important;
     text-decoration: none !important;
 }
 
-.grilla {
-    background-image: url("img/bg-1200.png");
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-}
-
-@media (min-width: 1px) and (max-width: 575.98px) {
-    .grilla {
-        background-image: url("img/bg-472.png");
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .grilla {
-        background-image: url("img/bg-576.png");
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .grilla {
-        background-image: url("img/bg-768.png");
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    .grilla {
-        background-image: url("img/bg-992.png");
-    }
-
-}
 
 /* SVG */
 
 svg text {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 500;
-    font-size: 4px;
+    font-size: 6px;
     fill: #aaa;
 }
 
@@ -208,16 +158,20 @@ svg g {
     animation-direction: alternate;
 }
 
-/* MAPA CONTACTO */
-
-#mapa{
-width: 100%; 
-height: 48vh;     
+#orquesta{
+    background:silver url('images/orquesta.jpg') 0 0 no-repeat;
+    background-size:cover;
 }
 
-@media (max-width: 767.98px) { 
-    #mapa{
-        width: 100%; 
-        height: 48vw;     
-    }
+#orquesta div{
+    width:77%;
 }
+
+@media (min-width: 768px) { 
+
+#orquesta div{
+    width:66%;
+}
+
+}
+
