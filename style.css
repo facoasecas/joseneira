@@ -42,7 +42,6 @@ h1 a {
     color: #333;
 }
 
-
 h2 {
     font-weight: 700;
     font-size: calc(1rem + 0.5vw);
@@ -55,7 +54,6 @@ h3 {
     font-size: calc(1rem + 0.25vw);
     color: var(--plata);
 }
-
 
 p.lead {
     font-size: calc(1rem + 0.5vw);
@@ -70,7 +68,7 @@ p.lead {
 .nav a {
     text-decoration: none;
     display: inline-block;
-    padding:0.75rem 1rem 0.5rem 1rem;
+    padding: 0.75rem 1rem 0.5rem 1rem;
     position: relative;
 }
 
@@ -122,12 +120,10 @@ figure figcaption.blockquote-footer abbr {
     color: #222;
 }
 
-
 abbr {
     border-bottom: none !important;
     text-decoration: none !important;
 }
-
 
 /* SVG */
 
@@ -158,20 +154,17 @@ svg g {
     animation-direction: alternate;
 }
 
-#orquesta{
-    background:silver url('images/orquesta.jpg') 0 0 no-repeat;
-    background-size:cover;
+#orquesta {
+    background: silver url("images/orquesta.jpg") 0 0 no-repeat;
+    background-size: cover;
 }
 
-#orquesta div{
-    width:77%;
+#orquesta div {
+    width: 77%;
 }
 
-@media (min-width: 768px) { 
-
-#orquesta div{
-    width:66%;
+@media (min-width: 768px) {
+    #orquesta div {
+        width: 66%;
+    }
 }
-
-}
-
