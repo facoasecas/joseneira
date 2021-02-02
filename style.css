@@ -6,6 +6,8 @@
 body {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 300;
+    background:#fafafa;
+    color:#111;
 }
 
 body::-webkit-scrollbar {
@@ -104,21 +106,15 @@ figure blockquote.blockquote {
 
 figure figcaption.blockquote-footer {
     font-weight: 500;
-    font-size: calc(1rem + 1vw);
-    color: #222;
+    font-size: calc(1.25rem + 1vw);
+    color: #333;
     display: inline;
 }
 
 figure figcaption.blockquote-footer:before {
-    content: "" !important;
+    content: " " !important;
 }
 
-figure figcaption.blockquote-footer abbr {
-    font-family: "PT Serif", serif;
-    letter-spacing: 0.05rem;
-    margin-left: 0.25rem;
-    color: #222;
-}
 
 abbr {
     border-bottom: none !important;
@@ -159,12 +155,12 @@ svg g {
     background-size: cover;
 }
 
-#orquesta div {
+#orquesta > div {
     width: 77%;
 }
 
 @media (min-width: 768px) {
-    #orquesta div {
-        width: 66%;
+    #orquesta > div {
+        width: 65%;
     }
 }
