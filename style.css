@@ -1,12 +1,14 @@
+@charset "UTF-8";
+
 :root {
-    --gris: #777;
-    --plata: #aaa;
+    --gris: #565656;
+    --plata: #919191;
 }
 
 body {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 300;
-    background:#fafafa;
+    background:#FAFAFA;
     color:#111;
 }
 
@@ -15,7 +17,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #fafafa;
+    background-color: #FAFAFA;
 }
 
 body::-webkit-scrollbar-thumb {
