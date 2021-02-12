@@ -125,7 +125,7 @@ abbr {
 
 /* SVG */
 
-svg text {
+svg#flecha text {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 500;
     font-size: 6px;
@@ -141,7 +141,7 @@ svg text {
     }
 }
 
-svg g {
+svg#flecha g {
     fill: none;
     stroke: #aaa;
     stroke-width: 0.3;
