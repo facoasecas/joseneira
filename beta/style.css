@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+:root {
+    --gris: #565656;
+    --plata: #737373;
+    --magenta: #E0007F;
+    --cian: #007EA8;
+}
+
+
+@font-face {
+    font-family: 'Anouk';
+    src: url('font/Anouk-Regular.woff2') format('woff2'),
+         url('font/Anouk-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anouk Italic';
+    src: url('font/Anouk-ItalicSquare.woff2') format('woff2'),
+         url('font/Anouk-ItalicSquare.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    background:#FAFAFA;
+    color:#111;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #FAFAFA;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--plata);
+}
+
+a {
+    color: var(--gris);
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+:hover {
+    transition: 0.5s ease color;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+@media (max-width: 767.98px) { 
+h1{text-align: center;}
+}
+
+
+h1 a {
+    color: #333;
+}
+
+h1 span{
+    display: block;
+    color:#666;
+    font-size:90%;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: calc(1rem + 0.5vw);
+    line-height: 1.5;
+    color: var(--plata);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: calc(1rem + 0.25vw);
+    color: var(--plata);
+}
+
+p.lead {
+    font-family: "Anouk", serif;
+    font-size: calc(1rem + 1vw);
+    margin: 0;
+    padding: 0;
+    color:var(--magenta);
+}
+
+p.lead em {
+    font-family: "Anouk Italic", serif;
+    color:#00B0E9;
+}
+
+.nav {
+    font-weight: 700;
+}
+
+.nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 1rem 0.5rem 1rem;
+    position: relative;
+}
+
+a.pasive:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+}
+
+a.pasive:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+a.active {
+    color: #000;
+}
+
+figure blockquote.blockquote {
+    color:var(--magenta);
+    font-family: "Anouk Italic", serif;
+    font-weight: 400;
+    font-size: calc(1.8rem + 1vw);
+    line-height: 1.3;
+}
+
+figure figcaption.blockquote-footer {
+    font-weight: 500;
+    font-size: calc(0.8rem + 1vw);
+    color: #333;
+}
+
+figure figcaption.blockquote-footer:before {
+    content: " " !important;
+}
+
+
+abbr {
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+/* SVG */
+
+svg#flecha text {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: 6px;
+    fill: #aaa;
+}
+
+@keyframes bajele {
+    from {
+        transform: translate(0, -1px);
+    }
+    to {
+        transform: translate(0, 2px);
+    }
+}
+
+svg#flecha g {
+    fill: none;
+    stroke: #aaa;
+    stroke-width: 0.3;
+    stroke-miterlimit: 10;
+    animation-name: bajele;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#orquesta {
+    background: silver url("images/orquesta.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+#orquesta > div {
+    width: 77%;
+}
+
+@media (min-width: 768px) {
+    #orquesta > div {
+        width: 65%;
+    }
+}
