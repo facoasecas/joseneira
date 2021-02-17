@@ -91,7 +91,6 @@ h3 {
 }
 
 p.lead {
-    font-family: "Anouk", serif;
     font-size: calc(1rem + 1vw);
     margin: 0;
     padding: 0;
@@ -99,7 +98,6 @@ p.lead {
 }
 
 p.lead em {
-    font-family: "Anouk Italic", serif;
     color:#00B0E9;
 }
 
