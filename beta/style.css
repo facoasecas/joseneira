@@ -8,7 +8,7 @@
     --gris-claro:#757575;
     --cian: #007DB3;
     --magenta: #E00083;
-    --gris-magenta:#4D4549;
+    --gris-magenta:#625359;
     --blanco:#fafafa;
 }
 
@@ -88,7 +88,7 @@ h1 a:hover span{
 .nav a {
     text-decoration: none;
     display: inline-block;
-    padding: 0.75rem 0;
+    padding: 0.75rem 0.15rem;
     margin-right:2rem;
     position: relative;
 }
@@ -119,18 +119,17 @@ a.active {
     color: #000;
 }
 
-
 /* TITULARES */
 
-.portada a h3{font-size:calc(1.4rem - 0.5vw); color:var(--gris-oscuro); transition: color ease .5s;}
+.portada a h3{font-size:calc(1.7rem - 0.75vw); color:var(--gris-oscuro); transition: color ease .5s;}
 
-.portada a h4{font-size:calc(1.2rem - 0.5vw); color:var(--gris-claro); transition: color ease .5s; }
+.portada a h4{font-size:calc(1.4rem - 0.75vw); color:var(--gris-claro); transition: color ease .5s; }
 
 .portada a svg path{fill:none;}
 
 .portada a:hover h3{ color:var(--negro); transition: color ease .5s; }
 
-.portada a:hover h4{ color:var(--casi-negro); transition: color ease .5s; }
+.portada a:hover h4{ color:var(--gris-medio); transition: color ease .5s; }
 
 @keyframes mueve {
     from {
