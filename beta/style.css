@@ -131,7 +131,7 @@ a.active {
 
 .portada a:hover h4{ color:var(--gris-medio); transition: color ease .5s; }
 
-@keyframes mueve {
+@keyframes avanza {
     from {
         transform: translate(-1px, 0);
     }
@@ -141,7 +141,7 @@ a.active {
 }
 
 .portada a:hover svg path{fill:var(--gris-oscuro);
-    animation-name: mueve;
+    animation-name: avanza;
     animation-duration: .4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -244,4 +244,20 @@ height: 60vh;
         width: 100%; 
         height: 30vw;     
     }
+}    
+
+@keyframes sube {
+    from {
+        transform: translate(0, -2px);
+    }
+    to {
+        transform: translate(0, 1px);
+    }
+}
+
+a#subir:hover svg path{
+animation-name: sube;
+animation-duration: .4s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
 }
