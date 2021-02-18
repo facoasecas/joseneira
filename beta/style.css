@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 :root {
-    --gris: #565656;
-    --plata: #737373;
-    --magenta: #E00083;
+    --negro:#00000E;
+    --casi-negro:#1D1D28;
+    --gris-oscuro: #3B3B42;
+    --gris-medio:#58585B;
+    --gris-claro:#757575;
     --cian: #007DB3;
+    --magenta: #E00083;
+    --blanco:#fafafa;
 }
-
 
 @font-face {
     font-family: 'Anouk';
@@ -25,94 +28,80 @@
 }
 
 body {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
-    background:#FAFAFA;
-    color:#111;
+    background:var(--blanco);
+    color:var(--negro);
 }
 
 body::-webkit-scrollbar {
     width: 0.25rem;
 }
 
-body::-webkit-scrollbar-track {
-    background-color: #FAFAFA;
-}
-
 body::-webkit-scrollbar-thumb {
-    background-color: var(--plata);
+    background-color: var(--gris-claro);
 }
 
 a {
-    color: var(--gris);
-    text-decoration: none;
-}
-a:hover {
-    color: #000;
+    color: var(--gris-claro);
     text-decoration: none;
 }
 
-:hover {
-    transition: 0.5s ease color;
+a:hover {
+    color: var(--negro);
+    text-decoration: none;
 }
+
+
+h1,h3,h5,h6{ font-weight: 700;}
+
+h2,h4{ font-weight: 500; }
 
 h1 {
-    font-weight: 700;
     font-size: 1.4rem;
     text-align: left;
-}
-
-@media (max-width: 767.98px) { 
-h1{text-align: center;}
-}
-
-
-h1 a {
-    color: #333;
+    letter-spacing: 0.01rem;
+    color:var(--gris-oscuro);
 }
 
 h1 span{
     display: block;
-    color:#666;
-    font-size:90%;
+    font-size:88%;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: calc(1rem + 0.5vw);
-    line-height: 1.5;
-    color: var(--plata);
+h1 a{
+    color:var(--gris-oscuro);
 }
 
-h3 {
-    font-weight: 700;
-    font-size: calc(1rem + 0.25vw);
-    color: var(--plata);
+h1 a span{
+    color:var(--gris-claro);
 }
 
-p.lead {
-    font-family: 'Spectral', serif;
-    font-weight: 400;
-    font-size: calc(1rem + 1vw);
-    margin: 0;
-    padding: 0;
-    color:var(--magenta);
+h1 a:hover{
+    color:var(--negro);
 }
 
-p.lead em {
-    color:#00B0E9;
-    font-weight: 400;
+h1 a:hover span{
+    color:var(--gris-medio);
 }
+
+/* NAVEGACIÓN */
 
 .nav {
     font-weight: 700;
+    letter-spacing: 0.03rem;
 }
 
 .nav a {
     text-decoration: none;
     display: inline-block;
-    padding: 0.75rem 1rem 0.5rem 1rem;
+    padding: 0.75rem 0;
+    margin-right:2rem;
     position: relative;
+}
+
+.nav a:last-child{
+    margin-right:0;
 }
 
 a.pasive:after {
@@ -123,7 +112,7 @@ a.pasive:after {
     height: 3px;
     left: 50%;
     position: absolute;
-    background: #000;
+    background: var(--negro);
     transition: width 0.2s ease 0s, left 0.2s ease 0s;
     width: 0;
 }
@@ -137,6 +126,66 @@ a.active {
     color: #000;
 }
 
+
+/* TITULARES */
+
+h2 {
+    font-size: 1.75rem;
+    color:var(--gris-oscuro);
+}
+
+h3 {
+    font-size: calc(1.75rem - 0.5vw);
+    line-height: 1.5rem;
+    color:var(--gris-oscuro);
+}
+
+
+h4 {
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color:var(--gris-oscuro);
+}
+
+a h3{ color:var(--gris-oscuro); transition: color ease .5s;}
+
+a h4{ color:var(--gris-claro); transition: color ease .5s; }
+
+a:hover h3{ color:var(--negro); transition: color ease .5s; }
+
+a:hover h4{ color:var(--casi-negro); transition: color ease .5s; }
+
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p em{color:var(--magenta); font-style: normal;}
+
+p strong{font-weight: 700;}
+
+
+p.lead {
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-size: calc(1rem + 1vw);
+    margin: 0;
+    padding: 0;
+    color:var(--magenta);
+}
+
+p.lead em {
+    color:#00B0E9;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
 figure blockquote.blockquote {
     color:var(--magenta);
     font-family: "Anouk Italic", serif;
@@ -146,10 +195,10 @@ figure blockquote.blockquote {
 }
 
 figure figcaption.blockquote-footer {
+    color: var(--gris-oscuro);
     margin-top:0.75rem;
     font-weight: 500;
     font-size: calc(0.7rem + 1vw);
-    color: #333;
 }
 
 figure figcaption.blockquote-footer:before {
@@ -164,12 +213,6 @@ abbr {
 
 /* SVG */
 
-svg#flecha text {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-size: 6px;
-    fill: #aaa;
-}
 
 @keyframes bajele {
     from {
