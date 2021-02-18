@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Visual design that celebrates the pleasure of seeing, looking, understanding" />
         <meta name="author" content="José Neira, Carmina Correa, Felipe Cortez" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet" />
-        <link href="style.css?v=1.0.3" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Spectral:ital@0;1&display=swap" rel="stylesheet" />
+        <link href="style.css?v=1.1.1" rel="stylesheet" />
         <title>José Neira</title>
         <link rel="canonical" href="https://joseneira.cl/" />
         <meta name="theme-color" content="#fafafa" />
@@ -20,14 +21,14 @@
         <meta name="og:url" content="https://joseneira.cl" />
         <meta name="og:type" content="website" />
     </head>
-    <body>
+    <body class="portada">
         <div class="container d-flex w-100 flex-column">
-            <header class="py-5 text-center">
+            <header class="pt-4 pb-5">
                 <h1 class="mt-3 float-md-start mb-0 align-items-center">
-                    <a href="https://joseneira.cl/">José Neira</a>
+                    <a href="index.html">José Neira<span>Visual Design</span></a>
                 </h1>
-                <nav class="mt-2 nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link active" href="https://joseneira.cl/">Selected work</a>
+                <nav class="mt-2 nav float-md-end">
+                    <a class="nav-link active" href="index.html">Selected work</a>
                     <a class="nav-link pasive" href="about.html">About</a>
                     <a class="nav-link pasive" href="contact.html">Contact</a>
                 </nav>
@@ -57,24 +58,43 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <img loading="eager" src="images/work-1-0-2.png" class="img-fluid shadow" alt="beethoven 250 en azul" />
+                            <div id="carouselBeethovenDos" class="carousel slide carousel-fade shadow" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="1000">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/work-1-0-2-0.png" class="d-block w-100" alt="beethoven 250 en negro sin grilla" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/work-1-0-2-1.png" class="d-block w-100" alt="beethoven 250 en negro sin grilla" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/work-1-0-2-2.png" class="d-block w-100" alt="beethoven 250 en negro con grilla" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/work-1-0-2-3.png" class="d-block w-100" alt="beethoven 250 en negro con grilla" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/work-1-0-2-4.png" class="d-block w-100" alt="beethoven 250 en negro con grilla" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/work-1-0-2-3.png" class="d-block w-100" alt="beethoven 250 en negro con grilla" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/work-1-0-2-2.png" class="d-block w-100" alt="beethoven 250 en negro con grilla" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/work-1-0-2-1.png" class="d-block w-100" alt="beethoven 250 en negro con grilla" />
+                                    </div>                  
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-3">
                             <img loading="eager" src="images/work-1-0-3.png" class="img-fluid shadow" alt="beethoven 250 en azul" />
                         </div>
-                        <div class="col-md-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" xml:space="preserve" class="mt-auto d-none d-md-block" id="flecha">
-                                <text transform="matrix(5e-17 -1 1 6e-17 94.5 83)">SCROLL DOWN</text>
-                                <g id="flecha">
-                                    <line x1="93" y1="85" x2="93" y2="95" />
-                                    <polyline points="91,93 93,95 95,93" />
-                                </g>
-                            </svg>
-                        </div>
+                        <div class="col-md-3"></div>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-3 order-md-2">
-                            <div id="carouselBeethovenDos" class="carousel slide carousel-fade shadow" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="2000">
+                            <div id="carouselBeethovenTres" class="carousel slide carousel-fade shadow" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="2000">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="images/work-1-0-4-1.jpg" class="d-block w-100" alt="Retrato de Beethoven" />
@@ -86,7 +106,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 order-md-3">
-                            <div id="carouselBeethovenDos" class="carousel slide carousel-fade shadow" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="2000">
+                            <div id="carouselBeethovenCuatro" class="carousel slide carousel-fade shadow" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="2000">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="images/work-1-0-5-1.png" class="d-block w-100" alt="Retrato de Beethoven" />
@@ -102,6 +122,9 @@
                                 <a href="work-1.html">
                                     <h3>Beethoven’s 250th Birthday at Ceac, University of Chile</h3>
                                     <h4 class="fs-6">Identity and editorial</h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -137,6 +160,9 @@
                         <a href="work-2.html">
                             <h3>To make reading strange</h3>
                             <h4 class="fs-6">Work in progress</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </a>
                     </div>
                 </article>
@@ -169,6 +195,9 @@
                         <a href="work-3.html">
                             <h3 class="pt-3">Concert programs, Artistic and Cultural Extension Center of the University of Chile</h3>
                             <h4 class="fs-6">Editorial design</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </a>
                     </div>
                 </article>
@@ -187,6 +216,9 @@
                         <a href="work-4.html">
                             <h3>SANDO. Hot sandwiches with a twist. Bethel Town, Connecticut</h3>
                             <h4 class="fs-6 pb-4">Brand identity</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </a>
                     </div>
                 </article>
@@ -258,10 +290,8 @@
                         </svg>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 me-auto">
-                        <a href="work-5.html">
-                            <h3>Flat kaleidoscope</h3>
-                            <h4 class="fs-6">Work in progress</h4>
-                        </a>
+                        <h3>Flat kaleidoscope</h3>
+                        <h4 class="fs-6">Work in progress</h4>
                     </div>
                 </article>
                 <!--\/\/\/\/ phrase-2 /\/\/\/\/-->
@@ -286,6 +316,9 @@
                         <a href="work-6.html">
                             <h3>Concert posters 2018-19, Artistic and Cultural Extension Center, University of Chile</h3>
                             <h4 class="fs-6">Identity and editorial</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </a>
                     </div>
                 </article>
@@ -316,6 +349,9 @@
                                 Dance show by the Chilean National Ballet and Power Peralta Duo
                             </h3>
                             <h4 class="fs-6">Identity and editorial</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </a>
                     </div>
                 </article>
