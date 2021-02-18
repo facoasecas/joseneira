@@ -8,15 +8,8 @@
     --gris-claro:#757575;
     --cian: #007DB3;
     --magenta: #E00083;
+    --gris-magenta:#4D4549;
     --blanco:#fafafa;
-}
-
-@font-face {
-    font-family: 'Anouk';
-    src: url('font/Anouk-Regular.woff2') format('woff2'),
-         url('font/Anouk-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
 }
 
 @font-face {
@@ -53,9 +46,9 @@ a:hover {
 }
 
 
-h1,h3,h5,h6{ font-weight: 700;}
+h1,h3,h4,h5,h6{ font-weight: 700;}
 
-h2,h4{ font-weight: 500; }
+h2{ font-weight: 500; }
 
 h1 {
     font-size: 1.4rem;
@@ -129,6 +122,33 @@ a.active {
 
 /* TITULARES */
 
+.portada a h3{font-size:calc(1.4rem - 0.5vw); color:var(--gris-oscuro); transition: color ease .5s;}
+
+.portada a h4{font-size:calc(1.2rem - 0.5vw); color:var(--gris-claro); transition: color ease .5s; }
+
+.portada a svg path{fill:none;}
+
+.portada a:hover h3{ color:var(--negro); transition: color ease .5s; }
+
+.portada a:hover h4{ color:var(--casi-negro); transition: color ease .5s; }
+
+@keyframes mueve {
+    from {
+        transform: translate(-1px, 0);
+    }
+    to {
+        transform: translate(1px, 0);
+    }
+}
+
+.portada a:hover svg path{fill:var(--gris-oscuro);
+    animation-name: mueve;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+
 h2 {
     font-size: 1.4rem;
     margin-top:0.5vw;
@@ -136,35 +156,23 @@ h2 {
 }
 
 h3 {
-    font-size: calc(1.75rem - 0.5vw);
-    line-height: 1.3;
+    font-size:1.5rem;
     color:var(--gris-oscuro);
 }
-
 
 h4 {
-    margin-bottom:1rem;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size:1.4rem;
     color:var(--gris-oscuro);
 }
 
-a h3{ color:var(--gris-oscuro); transition: color ease .5s;}
-
-a h4{ color:var(--gris-claro); transition: color ease .5s; }
-
-a:hover h3{ color:var(--negro); transition: color ease .5s; }
-
-a:hover h4{ color:var(--casi-negro); transition: color ease .5s; }
-
-
 h5 {
-    font-size: 1.25rem;
+    font-size:1.2rem;
 }
 
 h6 {
-    font-size: 1rem;
+    font-size:1.1rem;
 }
+
 
 p em{color:var(--magenta); font-style: normal;}
 
@@ -173,7 +181,6 @@ p strong{font-weight: 700;}
 
 p.lead {
     font-family: 'Spectral', serif;
-    font-weight: 400;
     font-size: calc(1rem + 1vw);
     margin: 0;
     padding: 0;
@@ -192,12 +199,12 @@ figure blockquote.blockquote {
     font-family: "Anouk Italic", serif;
     font-weight: 400;
     font-size: calc(3rem + 1vw);
-    line-height: 1;
+    line-height: 1.2;
 }
 
 figure figcaption.blockquote-footer {
-    color: var(--gris-oscuro);
-    margin-top:0.75rem;
+    color: var(--gris-magenta);
+    margin-top:0.5rem;
     font-weight: 500;
     font-size: calc(0.7rem + 1vw);
 }
@@ -212,28 +219,6 @@ abbr {
     text-decoration: none !important;
 }
 
-/* SVG */
-
-
-@keyframes bajele {
-    from {
-        transform: translate(0, -1px);
-    }
-    to {
-        transform: translate(0, 2px);
-    }
-}
-
-svg#flecha g {
-    fill: none;
-    stroke: #aaa;
-    stroke-width: 0.3;
-    stroke-miterlimit: 10;
-    animation-name: bajele;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 
 #orquesta {
     background: silver url("images/orquesta.jpg") 0 0 no-repeat;
