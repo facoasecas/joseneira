@@ -180,16 +180,27 @@ p strong{font-weight: 700;}
 
 p.lead {
     font-family: 'Spectral', serif;
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 1.1vw);
     margin: 0;
     padding: 0;
     color:var(--magenta);
+    letter-spacing: -0.02rem;
+    line-height: 1.4;
+    
 }
+
+@media (max-width: 767.98px) { 
+
+    p.lead{
+        font-size: calc(1rem + 1.3vw);
+    }
+
+}
+
 
 p.lead em {
     color:#00B0E9;
-    font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
 
 
