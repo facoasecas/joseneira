@@ -3,31 +3,37 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Visual design that celebrates the pleasure of seeing, looking, understanding">
-        <meta name="author" content="José Neira, Carmina Correa, Felipe Cortez">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
-        <link href="style.css?v=1.0.2" rel="stylesheet" />
+        <meta name="description" content="Visual design that celebrates the pleasure of seeing, looking, understanding" />
+        <meta name="author" content="José Neira, Carmina Correa, Felipe Cortez" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Spectral:ital@0;1&display=swap" rel="stylesheet" />
+        <link href="style.css?v=1.0.5" rel="stylesheet" />
         <title>José Neira</title>
-        <link rel="canonical" href="https://joseneira.cl/">
-        <meta name="theme-color" content="#fafafa">
+        <link rel="canonical" href="https://joseneira.cl/" />
+        <meta name="theme-color" content="#fafafa" />
         <!-- Twitter -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="José Neira">
-        <meta name="twitter:description" content="Visual design that celebrates the pleasure of seeing, looking, understanding">
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="José Neira" />
+        <meta name="twitter:description" content="Visual design that celebrates the pleasure of seeing, looking, understanding" />
         <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-        <meta name="og:title" content="José Neira">
-        <meta name="og:description" content="Visual design that celebrates the pleasure of seeing, looking, understanding">
-        <meta name="og:url" content="https://joseneira.cl">
-        <meta name="og:type" content="website">        
+        <meta name="og:title" content="José Neira" />
+        <meta name="og:description" content="Visual design that celebrates the pleasure of seeing, looking, understanding" />
+        <meta name="og:url" content="https://joseneira.cl" />
+        <meta name="og:type" content="website" />
+        <!--mapa-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     </head>
     <body>
         <div class="container d-flex w-100 flex-column">
-            <header class="py-5 text-center">
-                <h1 class="mt-3 float-md-start mb-0 align-items-center"><a href="https://joseneira.cl/">José Neira</a></h1>
-                <nav class="mt-2 nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link pasive" href="https://joseneira.cl/">Selected work</a>
+            <header class="pt-4 pb-5">
+                <h1 class="mt-3 float-md-start mb-0 align-items-center">
+                    <a href="index.html">José Neira<span>Visual Design</span></a>
+                </h1>
+                <nav class="mt-2 nav float-md-end">
+                    <a class="nav-link pasive" href="index.html">Selected work</a>
                     <a class="nav-link pasive" href="about.html">About</a>
                     <a class="nav-link active" href="contact.html">Contact</a>
                 </nav>
@@ -38,17 +44,27 @@
                 <!--\/\/\/\/\/\/\/\/\/\/-->
                 <div class="row">
                     <div class="col-md-4">
-                        <h2 class="d-none d-md-block">Contact</h2>
-                        <address class="mt-3">
-                            <h3 class="pt-3">Phone</h3>
+                        <h2 class="d-none d-md-block mb-5">Contact</h2>
+                        <address>
+                            <h5>Phone</h5>
                             <p>+569 8 929 2072</p>
-                            <h3>E-Mail</h3>
+                            <h5>E-Mail</h5>
                             <p><a href="mailto:jneira@tesisdg.cl">jneira@tesisdg.cl</a></p>
-
+                            <h5>Instagram</h5>
+                            <p>
+                                <a href="https://www.instagram.com/joseneiradelano/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                                        />
+                                    </svg>
+                                    joseneiradelano
+                                </a>
+                            </p>
                         </address>
                     </div>
                     <div class="col-md-8 pt-3 pt-md-0">
-                        <img src="images/contact.jpg" class="w-100 shadow-sm" />
+                        <div id="mapa" class="shadow-sm"></div>
                     </div>
                 </div>
             </main>
@@ -56,5 +72,31 @@
         <div class="container">
             <footer></footer>
         </div>
+
+        <script>
+            $(function () {
+                // para ver la grilla
+                var open = false;
+                $("#grid").click(function () {
+                    open = !open;
+                    if (open) {
+                        $("main, header, footer").addClass("grilla");
+                    } else {
+                        $("main, header, footer").removeClass("grilla");
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            var mymap = L.map("mapa").setView([-33.41899, -70.61819], 14);
+            L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw", {
+                maxZoom: 18,
+                // alteranativas: dark-v10, light-v10, outdoors-v11, satellite-v9, satellite-streets-v11
+                id: "mapbox/satellite-v9",
+                tileSize: 512,
+                zoomOffset: -1,
+            }).addTo(mymap);
+        </script>
     </body>
 </html>
